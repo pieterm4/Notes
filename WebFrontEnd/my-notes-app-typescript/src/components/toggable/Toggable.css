@@ -1,0 +1,24 @@
+.toggable {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggable-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggable-header .left {
+  float: left;
+}
+
+.toggable-header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: end;
+}
+
+.toggable-content {
+  display: block;
+}

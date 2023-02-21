@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modalContent {
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.modalHeader,
+.modalFooter {
+  padding: 10px;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: x-large;
+  color: black;
+}
+
+.modalBody {
+  padding: 10px;
+}
+
+.modalFooter {
+  display: flex;
+  align-content: flex-end;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-button {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  font-weight: bold;
+  height: fit-content;
+}
+
+.modal-submit-button {
+  background-color: rgb(255, 188, 63);
+}
+
+.modal-cancel-button {
+  background-color: rgb(250, 109, 109);
+}
+
+.modal-submit-button:hover {
+  background-color: orange;
+  box-shadow: 1px 1px 18px orange;
+}
+
+.modal-submit-button:active {
+  transform: translateY(3px);
+}
+
+.modal-cancel-button:hover {
+  background-color: red;
+  box-shadow: 1px 1px 18px red;
+}
+
+.modal-cancel-button:active {
+  transform: translateY(3px);
+}

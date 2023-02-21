@@ -1,0 +1,35 @@
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.FadeInAnimation {
+  animation: 2s ease-out 0s 1 FadeIn;
+}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+a {
+  color: orange;
+}
+
+a:visited {
+  color: rgb(125, 80, 0);
+}
+
+a:hover {
+  color: rgb(253, 185, 59);
+}

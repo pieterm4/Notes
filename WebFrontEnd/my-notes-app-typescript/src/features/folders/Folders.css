@@ -1,0 +1,136 @@
+.folderList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: calc(100vh - 24rem);
+    overflow-y: scroll;
+}
+
+.folder {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(55, 55, 55);
+    box-shadow: 1px 1px 10px rgb(167, 167, 167);
+}
+
+.folder-selected {
+    border-bottom: 5px solid #ffa500;
+}
+
+.folder:active:not(:focus-within) {
+    transform: translateY(3px);
+}
+
+.folder:hover {
+    box-shadow: 2px 2px 5px orange;
+    background-color: antiquewhite;
+}
+
+.folder .title {
+    flex: 1;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.folder .folderContent {
+    display: flex;
+    vertical-align: middle;
+}
+
+.folderContent .buttons {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    justify-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: flex-end;
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    border: none;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: rgb(167, 167, 167);
+    box-shadow: 1px 1px 18px #888888;
+}
+
+.buttons button:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(3px);
+}
+
+.folderContent .numberOfNotes {
+    font-style: italic;
+    font-size: 0.8em;
+    flex: 1;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+}
+
+.foldersContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.folderButtons {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.folderButtons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    align-items: center;
+    padding: 0;
+    border: none;
+    fill: orange;
+    background-color: transparent;
+}
+
+.folderButtons button:hover {
+    fill: rgb(179, 117, 0);
+    box-shadow: 1px 1px 15px orange;
+}
+
+.folderButtons button:active {
+    transform: translateY(3px);
+}
+
+.create-folder-input {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+.create-folder-input input {
+    border: none;
+    border-bottom: 1px solid orange;
+    width: 100%;
+    background-color: white;
+    color: rgb(28, 27, 26);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.create-folder-input input:focus {
+    outline: none;
+    border-bottom: 3px solid orange;
+}
+
+.delede-folder-modal-text {
+    color: black;
+    font-size: 15;
+}

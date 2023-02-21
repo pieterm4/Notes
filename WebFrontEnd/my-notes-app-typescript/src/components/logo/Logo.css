@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.logo h2 {
+  font-size: calc(10px + 2vmin);
+}
+
+.logo img {
+  height: 5vmin;
+  margin-right: 10px;
+}
