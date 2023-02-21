@@ -5,6 +5,9 @@ bin/
 obj/
 project.lock.json
 NuGetScratch/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
 
 api/wwwroot/**
 !api/wwwroot/scratch.html
