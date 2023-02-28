@@ -30,7 +30,7 @@ public class CreateFolderCommandHandler : IRequestHandler<CreateFolderCommand, C
             return response;
         }
 
-        var folder = new Folder { Title = request.Title };
+        var folder = _mapper.Map<Folder>(request);
         await _folderRepository.AddAsync(folder);
         response.Folder = _mapper.Map<CreateFolderDto>(folder);
 
